@@ -39,6 +39,10 @@ void setup(){
 size(1080,720);
 background(0,84,147);
 
+  fill(194, 178, 128);
+  noStroke();
+  rect(0,590, 1080,130);
+
 }
 
 void draw(){
@@ -112,22 +116,26 @@ void draw(){
   
   // SAND
   
-  fill(194, 178, 128);
+  /*fill(194, 178, 128);
   noStroke();
-  rect(0,590, 1080,130);
+  rect(0,590, 1080,130);*/
   
+  fill(0);
   for(int j =0; j<5; j++){
     y= y+spacing2;
     for(int i =0; i<11; i++){
-      fill(0);
+      //fill(0);
       ellipse(x ,y ,3, 3 );  
       x= x+spacing;
     //y = y+spacing2;
   }
   
-
+ 
 
 }
+  fill(0);
+  rect(0,590,25,25);
+
 }
 
 
@@ -161,3 +169,10 @@ void mousePressed(){
   
   }
 }
+
+
+/*
+sand textures
+random values of Sand palette
+
+*/
